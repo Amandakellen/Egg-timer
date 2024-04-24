@@ -27,7 +27,7 @@ class EggTimerFragment : Fragment() {
             inflater, R.layout.fragment_egg_timer, container, false
         )
 
-        val viewModel = ViewModelProvider(this).get(EggTimerViewModel::class.java)
+        val viewModel = ViewModelProvider(this)[EggTimerViewModel::class.java]
 
         binding.eggTimerViewModel = viewModel
         binding.lifecycleOwner = this.viewLifecycleOwner
