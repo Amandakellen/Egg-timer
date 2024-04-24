@@ -43,26 +43,14 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.appcompat)
     implementation(libs.material)
-    implementation(libs.androidx.activity)
+    implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.constraintlayout)
-    testImplementation(libs.junit)
+    implementation(libs.androidx.legacy.support.v4)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+
+    // Testing dependencies
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-
-    implementation (libs.androidx.legacy.support.v4)
-    implementation (libs.androidx.lifecycle.extensions)
-    implementation (libs.androidx.lifecycle.viewmodel.ktx)
-    testImplementation (libs.junit)
-    androidTestImplementation(libs.androidx.runner)
-    androidTestImplementation(libs.androidx.espresso.core)
-
-    //for fcm
-    implementation (libs.firebase.core)
-    implementation (libs.firebase.iid)
-    implementation (libs.firebase.messaging)
-    implementation (libs.work.runtime)
 }
