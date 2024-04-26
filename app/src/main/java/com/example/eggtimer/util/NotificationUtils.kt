@@ -2,6 +2,7 @@ package com.example.eggtimer.util
 
 import android.app.NotificationManager
 import android.app.PendingIntent
+import android.app.PendingIntent.FLAG_IMMUTABLE
 import android.app.PendingIntent.FLAG_UPDATE_CURRENT
 import android.content.Context
 import android.content.Intent
@@ -32,7 +33,7 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
         applicationContext,
         NOTIFICATION_ID,
         contentIntent,
-        PendingIntent.FLAG_UPDATE_CURRENT
+        FLAG_IMMUTABLE or FLAG_UPDATE_CURRENT
     )
 
     // TODO: Step 2.0 add style
@@ -50,7 +51,7 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
         applicationContext,
         REQUEST_CODE,
         snoozeIntent,
-        FLAG_UPDATE_CURRENT)
+        FLAG_IMMUTABLE or FLAG_UPDATE_CURRENT)
 
     // TODO: Step 1.2 get an instance of NotificationCompat.Builder
     // Build the notification
