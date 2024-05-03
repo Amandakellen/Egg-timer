@@ -17,6 +17,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.eggtimer.R
 import com.example.eggtimer.receiver.AlarmReceiver
 import com.example.eggtimer.util.cancelNotifications
+import com.example.eggtimer.util.sendNotification
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
