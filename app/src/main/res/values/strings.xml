@@ -31,6 +31,6 @@
     <string name="breakfast_notification_channel_name" translatable="true">Breakfast</string>
     <string name="eggs_ready">It is time! Bon appetit!</string>
     <string name="timer_running">Egg timer is running...</string>
-    <string name="breakfast_notification_channel_description">Breakfast reminder</string>
+    <string name="breakfast_notification_channel_description">Time for breakfast</string>
     <string name="snooze">Snooze</string>
 </resources>

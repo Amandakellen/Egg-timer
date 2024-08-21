@@ -64,7 +64,7 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
         applicationContext,
         REQUEST_CODE,
         snoozeIntent,
-        FLAGS or PendingIntent.FLAG_IMMUTABLE)
+        FLAGS )
 
     // TODO: Step 1.2 get an instance of NotificationCompat.Builder
     // Build the notification
