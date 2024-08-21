@@ -17,7 +17,7 @@
 package com.example.android.eggtimernotifications.util
 
 import android.app.NotificationManager
-import android.app.PendingIntent
+import android.app. PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.graphics.BitmapFactory
@@ -64,7 +64,8 @@ fun NotificationManager.sendNotification(messageBody: String, applicationContext
         applicationContext,
         REQUEST_CODE,
         snoozeIntent,
-        FLAGS )
+        PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
+    )
 
     // TODO: Step 1.2 get an instance of NotificationCompat.Builder
     // Build the notification
