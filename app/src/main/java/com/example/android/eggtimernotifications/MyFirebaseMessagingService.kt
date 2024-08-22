@@ -17,13 +17,13 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
         // Check if message contains a data payload.
         remoteMessage.data.isNotEmpty().let {
-            sendNotification(remoteMessage.data["message"])
+            //sendNotification(remoteMessage.data["message"])
             Log.d(TAG, "Message data payload: " + remoteMessage.data)
         }
 
         // Check if message contains a notification payload.
         remoteMessage.notification?.let {
-            sendNotification(it.body)
+//            sendNotification(it.body)
             Log.d(TAG, "Message Notification Body: ${it.body}")
         }
     }
